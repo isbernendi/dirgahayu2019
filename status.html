@@ -32,37 +32,33 @@ iframe  {float:left; height:22px; width:100%;}
 	<p style="margin-top:5px;margin-bottom:5px">
 		
 <p style="font-size:11px;text-align:center;margin-top:5px;margin-bottom:5px;color:#555">
-	  $(if login-by == 'trial')
+
 					Anda telah terhubung <br> Gunakan voucher untuk internet unlimited </b></center>
        
-                      $(elif login-by != 'mac')
+                
 	                <b>Anda telah terhubung <br> Terimakasih sudah berlangganan internet kami </b></center>
        </p>
 <div style='display:none;'>  Kode voucher <b><font color="#0dbbdb"><class id="user">$(username)</b></font></div>
      
-      $(endif) 
+
 		<table class="table2">
 		  <tbody class="align-l">
-				   <tr><td  style="width: 30%;">voucher</td><td>$(username)</td></tr>
-				   <tr><td>ip</td><td>$(ip)</td></tr>
-							<tr><td>Traffic</td><td>U $(bytes-in-nice) | <b>D $(bytes-out-nice)</b></td></tr>
-								 <tr><td>Terkoneksi</td><td>$(uptime)</td></tr>
-$(if remain-bytes-total)
-     <tr><td>Sisa Kuota</td><td>$(remain-bytes-total-nice)</td></tr>
-$(endif)
-$(if session-time-left)
-     <tr><td>Sisa Waktu</td><td>$(session-time-left)</td></tr>
-$(endif)
-$(if blocked == 'yes')
-                              	 <tr><td>Status</td><td><div style="color: #FF8080">
-<a href="$(link-advert)" target="hotspot_advert">advertisement</a> required</div></td></tr>
-$(elif refresh-timeout)
-	 <tr><td>Refresh</td><td>$(refresh-timeout)</td></tr>
-$(endif)
-      <tr><td>Expired</td><td>$(uptime) | <b>$(session-timeout)</b>$(if session-timeout == '')<b>TIDAK TERBATAS</b>$(endif)</td></tr>
+				   <tr><td  style="width: 30%;">voucher</td><td>ujicoba</td></tr>
+				   <tr><td>ip</td><td> 192.168.40.205</td></tr>
+					<tr><td>mac</td><td> 74:27:EA:26:B7:1B</td></tr>		
+
+     <tr><td>Sisa waktu</td><td>Terpakai : 21m14s | Sisa : Tidak terbatas</td></tr>
+
+     <tr><td>Traffic</td><td>U 2.4 MiB | D 30.7 MiB</td></tr>
+
+                 
+
+	
+
+      <tr><td>Expired</td><td>aug/15/2019 15:12:50</td></tr>
 
 </table>
-$(if login-by-mac != 'yes')
+
 							<p style="margin-top:10px;margin-bottom:5px">
 								<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
 			<p style="font-size:11px;text-align:center;margin-top:-5px;margin-bottom:5px;color:#555">
