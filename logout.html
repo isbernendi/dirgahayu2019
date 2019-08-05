@@ -1,12 +1,15 @@
 <html>
 <head>
-<title> logout</title>
+<title>mks > logout</title>
+<meta http-equiv="refresh" content="1; url=login.html">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
-<link rel="stylesheet" href="mks.css">
- <link rel="icon" type="/x-icon" href="/favicon.ico">
-	<meta http-equiv="refresh" content="1; url=login.html">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+</style>
 </head>
+ </script>
  <style type="text/css"> 
 .blink { -webkit-animation: blink .99s linear infinite; 
 -moz-animation: blink .99s linear infinite; 
@@ -15,29 +18,30 @@
 animation: blink .99s linear infinite; } @-webkit-keyframes blink { 0% { opacity: 1; } 50% { opacity: 1; } 50.01% { opacity: 0; } 100% { opacity: 0; } } @-moz-keyframes blink { 0% { opacity: 1; } 50% { opacity: 1; } 50.01% { opacity: 0; } 100% { opacity: 0; } } @-ms-keyframes blink { 0% { opacity: 1; } 50% { opacity: 1; } 50.01% { opacity: 0; } 100% { opacity: 0; } } @-o-keyframes blink { 0% { opacity: 1; } 50% { opacity: 1; } 50.01% { opacity: 0; } 100% { opacity: 0; } } @keyframes blink { 0% { opacity: 1; } 50% { opacity: 1; } 50.01% { opacity: 0; } 100% { opacity: 0; } } 
 </style>
 <body>
-	<script language="JavaScript">
-		function readablizeBytes(bytes) {
-		var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
-		var e = Math.floor(Math.log(bytes)/Math.log(1024));
-		return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
-		}
-		</script>
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+<div class="container5">
+	<div class="footer" align="center">
+	<div class="main">
+	<div class="center" align="center">
 
-<div class="container">
-		<div class="row mt-10">
-			<div class="col-3 mr-a box-semua" id="main" style="float:none;">
-			
-    						<p style="font-size:20px;text-align:center;margin-top:10px;margin-bottom:10px;color:#111" class="blink">
-<span style="background: #20a8d8;border: 3px solid #ccc;border-radius: 6px; color: #f3f4f5; font-weight: bold; text-align:center">
+<p style="font-size:25px;text-align:center;margin-top:100px;margin-bottom:10px;color:#111" class="blink">
+<span style="background: #800000; color: #fff; font-weight: bold; text-align:center">
 &nbsp;&nbsp;&nbsp;LOGOUT BERHASIL&nbsp;&nbsp;</span>
-						 <p style=";margin-top:20px"> 
-    						
-					
-</div>
-				</div>
-			</div>
-	
-	</div>
 
+</table>
+<p style="margin-top:100px;margin-bottom:5px">
+</div>
+		</div>
+		</div>
+	</div>
 </body>
 </html>
